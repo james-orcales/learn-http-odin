@@ -5,6 +5,8 @@ Implement an http server from scratch using syscalls. Written in Odin and the im
 ## Quickstart
 
 ```
+bin/darwin/lua bootstrap.lua
+
 bin/darwin/lua odin run src/tcp.odin -file
 nc -E 127.0.0.1:<port>
 
