@@ -63,7 +63,7 @@ main :: proc() {
                 sin_family = .INET,
                 sin_port   = 0, // let the OS pick
         }
-        if err := posix.inet_pton(.INET, "127.0.0.1", rawptr(&address.sin_addr)); err != .SUCCESS {
+        if err := posix.inet_pton(.INET, "127.0.0.1", rawptr(&address.sin_addr), size_of(address)); err != .SUCCESS {
                 fmt.panicf("%w", err)
         }
 
