@@ -23,9 +23,9 @@ curl --include 127.0.0.1:<port>/my-super-secret-page
 `$ cd "$(xcrun --show-sdk-path)/usr/include/sys/types.h`
 
 ```
-clang -E -dM "$(xcrun --show-sdk-path)/usr/include/sys/socket.h  | $EDITOR"
-clang -E -dM "$(xcrun --show-sdk-path)/usr/include/sys/types.h   | $EDITOR"
-clang -E -dM "$(xcrun --show-sdk-path)/usr/include/netinet/in.h  | $EDITOR"
+clang -E -dM "$(xcrun --show-sdk-path)/usr/include/sys/socket.h" | $EDITOR
+clang -E -dM "$(xcrun --show-sdk-path)/usr/include/sys/types.h"  | $EDITOR
+clang -E -dM "$(xcrun --show-sdk-path)/usr/include/netinet/in.h" | $EDITOR
 ```
 
 ## Syscall stdlib wrappers:
