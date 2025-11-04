@@ -20,7 +20,7 @@ curl --http1.0 --include 127.0.0.1:<port>/my-super-secret-page
 
 ## List libc macro definitions (MacOS):
 
-`$ cd "$(xcrun --show-sdk-path)/usr/include/sys/types.h`
+`$ cd "$(xcrun --show-sdk-path)/usr/include/`
 
 ```
 clang -E -dM "$(xcrun --show-sdk-path)/usr/include/sys/socket.h" | $EDITOR
