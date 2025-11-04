@@ -11,9 +11,9 @@ bin/darwin/lua odin run src/tcp.odin -file
 nc -E 127.0.0.1:<port>
 
 bin/darwin/lua odin run src/http.odin -file
-curl --include 127.0.0.1:<port>
-curl --include 127.0.0.1:<port>/wazoo
-curl --include 127.0.0.1:<port>/my-super-secret-page
+curl --http1.0 --include 127.0.0.1:<port>
+curl --http1.0 --include 127.0.0.1:<port>/wazoo
+curl --http1.0 --include 127.0.0.1:<port>/my-super-secret-page
 # Lastly, visit in your browser: 127.0.0.1:<port>/my-super-secret-page
 
 ```
