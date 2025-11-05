@@ -1,4 +1,4 @@
-# learn-http-odin
+# learn_http_odin
 
 Implement an http server from scratch using syscalls. Written in Odin and the implementation is specific to MacOS. Avoid using the Odin stdlib syscall wrappers.
 
